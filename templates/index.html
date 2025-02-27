@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Include Plotly -->
+</head>
+<body>
+<div class="container">
+    <h1>Stock Price Predictor</h1>
+    
+    <form id="prediction-form">
+        <input type="text" id="symbol" name="symbol" placeholder="Enter stock symbol (e.g., AAPL)" required>
+        <input type="date" id="start-date" name="start_date" required>
+        <input type="date" id="end-date" name="end_date" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    <div id="loading" class="hidden">Fetching predictions...</div>
+
+    <div id="result" class="hidden">
+        <h2>Predictions for <span id="result-symbol"></span></h2>
+        <div id="chart"></div> <!-- Chart will render here -->
+        
+        <h3>Additional Stock Details</h3>
+        <ul id="details"></ul>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
