@@ -3,6 +3,9 @@
 ## Description
 This project is a web-based application that predicts stock prices using machine learning techniques. It combines historical stock data analysis with LSTM (Long Short-Term Memory) neural networks to forecast future stock prices.
 
+## Why LSTM?
+LSTM is used because it efficiently processes sequential stock price data, capturing long-term dependencies and trends for accurate forecasting. It predicts by learning patterns from historical prices, using past time steps as input to forecast future values while handling market fluctuations.
+
 ## Features
 - Fetch historical stock data using Yahoo Finance API
 - Predict stock prices using LSTM neural networks
@@ -50,13 +53,6 @@ python app.py
 3. Enter a stock symbol (e.g., AAPL for Apple Inc.), select a date range, and click "Predict"
 
 4. View the historical and predicted stock prices on the interactive chart
-
-## Project Structure
-- `app.py`: Main Flask application
-- `model.py`: Stock price prediction model using LSTM
-- `templates/index.html`: HTML template for the web interface
-- `static/css/style.css`: CSS styles for the web interface
-- `static/js/script.js`: JavaScript for handling user interactions and chart rendering
 
 Demo:
 
