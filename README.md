@@ -59,5 +59,7 @@ python app.py
 - `static/js/script.js`: JavaScript for handling user interactions and chart rendering
 
 Demo:
+
+
 <img width="463" alt="image" src="https://github.com/user-attachments/assets/835ff6a5-98e1-4145-b171-0a1b0268818a" />
 <img width="431" alt="image" src="https://github.com/user-attachments/assets/b466eb52-27a9-48f8-be1f-23f7c2a55184" />
